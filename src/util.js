@@ -1,7 +1,7 @@
 //@flow
 import {parse} from '@babel/parser';
-import path from 'path';
-import fs from 'fs';
+import path from 'node:path/posix';
+import fs from 'node:fs';
 import pathDirname from 'path-dirname';
 import {traverse} from '@babel/core';
 import generate from '@babel/generator';

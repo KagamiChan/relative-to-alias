@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 //@flow
 import yargs from 'yargs';
-import path from 'path';
+import path from 'node:path/posix';
 import glob from 'glob';
 
 import {transformPath, getSourceGlob, excludeAliasPathFiles, getIgnoreGlobs} from './util';
